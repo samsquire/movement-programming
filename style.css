@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.active {
+  border: 1px solid black;
+  color: black;
+  font-weight: bold;
+}
+.selected {
+  background-color: red;
+}
+#one {
+  width: 230px;
+  float: left;
+  overflow-y: scroll;
+}
+#two {
+  width: 230px;
+    float: left;
+}
+#three {
+  width: 230px;
+    float: left;
+}
+#four {
+  width: 230px;
+    float: left;
+}
+.row {
+  clear: both;
+}
+}
