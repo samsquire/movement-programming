@@ -1,3 +1,13 @@
+var rows = 15;
+var size = 100;
+for (var x = 0 ; x < rows ; x++) {
+  $("#one tbody").append("<tr></tr>");
+  var row = $("#one tbody tr")[x];
+  for (var y = 0 ; y < size; y++) {
+    $(row).append("<td></td>");
+  }
+}
+
 var td = document.querySelectorAll("#one table td");
 var two = document.querySelectorAll("#two table td");
 var doc = JSON.stringify({
@@ -161,10 +171,14 @@ var picked = {waitingForEnd: false, gotLoopEnd: false};
 for (var x = 0 ; x < td.length; x++) {
   var row = Math.floor(x / 10);
   var column = x % 10;
-  $(td[x]).html(x);
+  $(td[x]).html("&nbsp");
   $(td[x]).data("row", row);
   $(td[x]).data("column", column);
 }
+
+$(td[15]).html("1");
+
+
 $("table td").on("mouseover", function (event) {
   $(event.target).toggleClass("selected active");
 });

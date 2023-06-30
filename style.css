@@ -11,12 +11,14 @@ html {
   background-color: red;
 }
 #one {
-  width: 230px;
   float: left;
   overflow-y: scroll;
 }
+td {
+  background-color: lightgrey;
+}
 #two {
-  width: 230px;
+  width: 250px;
     float: left;
 }
 #three {
@@ -29,5 +31,4 @@ html {
 }
 .row {
   clear: both;
-}
 }
